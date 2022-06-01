@@ -7,12 +7,6 @@ public class CCuenta {
     public CCuenta() {
     }
 
-    public CCuenta(String nom, String cue, double sal, double tipo) {
-        nombre = nom;
-        cuenta = cue;
-        saldo = sal;
-    }
-
     public void asignarNombre(String nom) {
         nombre = nom;
     }
@@ -28,7 +22,6 @@ public class CCuenta {
     public String obtenerCuenta() {
         return cuenta;
     }
-
     public void ingresar(double cantidad) throws Exception {
         if (cantidad < 0) {
             throw new Exception("No se puede ingresar una cantidad negativa");
